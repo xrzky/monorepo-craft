@@ -1,0 +1,14 @@
+{
+  "name": "ai-product-engineering-ii",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "dev": "pnpm --recursive --parallel --filter \"./apps/*\" run dev",
+    "dev:api": "pnpm --filter @repo/api dev",
+    "dev:platform": "pnpm --filter @repo/platform dev",
+    "build": "pnpm --recursive --if-present run build",
+    "typecheck": "pnpm --recursive --if-present run typecheck"
+  }
+}
