@@ -25,11 +25,11 @@ decision/xxxx-meaningful-name.md
 
 Every decision record has exactly one status:
 
-| Status       | Meaning                                                                 |
-| ------------ | ----------------------------------------------------------------------- |
-| `accepted`   | The decision is in effect and should be followed.                       |
-| `superseded` | The decision was replaced by a newer record. Link to its replacement.   |
-| `deprecated` | The decision is no longer recommended, but no replacement exists yet.   |
+| Status       | Meaning                                                               |
+| ------------ | --------------------------------------------------------------------- |
+| `accepted`   | The decision is in effect and should be followed.                     |
+| `superseded` | The decision was replaced by a newer record. Link to its replacement. |
+| `deprecated` | The decision is no longer recommended, but no replacement exists yet. |
 
 When a decision changes, write a new record and set the old one to `superseded`,
 linking both ways. Do not rewrite the history of an accepted record.
@@ -81,17 +81,19 @@ They cover:
 
 ### Decisions
 
-| ID   | Title                                            | Status   |
-| ---- | ------------------------------------------------ | -------- |
-| 0001 | Use a pnpm workspace monorepo                    | accepted |
-| 0002 | Ship internal packages as TypeScript source      | accepted |
-| 0003 | Hono with Zod request validation                 | accepted |
-| 0004 | TanStack Router with file-based routing          | accepted |
-| 0005 | Custom logger instead of a logging framework     | accepted |
+| ID   | Title                                        | Status   |
+| ---- | -------------------------------------------- | -------- |
+| 0001 | Use a pnpm workspace monorepo                | accepted |
+| 0002 | Ship internal packages as TypeScript source  | accepted |
+| 0003 | Hono with Zod request validation             | accepted |
+| 0004 | TanStack Router with file-based routing      | accepted |
+| 0005 | Custom logger instead of a logging framework | accepted |
+| 0006 | Oxlint, Oxfmt, and a pre-commit gate         | accepted |
+| 0007 | Playwright E2E suite at the repository root  | accepted |
 
 ### Product
 
-| ID   | Title                        |
-| ---- | ---------------------------- |
-| 0001 | Initial product scope        |
-| 0002 | Product notes                |
+| ID   | Title                 |
+| ---- | --------------------- |
+| 0001 | Initial product scope |
+| 0002 | Product notes         |

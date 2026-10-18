@@ -28,8 +28,11 @@ const priorities: Record<LogLevel, number> = {
 function readLevelFromEnv(): LogLevel | undefined {
   const env =
     "process" in globalThis
-      ? (globalThis as { process?: { env?: Record<string, string | undefined> } })
-          .process?.env
+      ? (
+          globalThis as {
+            process?: { env?: Record<string, string | undefined> };
+          }
+        ).process?.env
       : undefined;
   const value = env?.LOG_LEVEL?.toLowerCase();
   return LOG_LEVELS.find((level) => level === value);
